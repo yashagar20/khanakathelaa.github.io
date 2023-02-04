@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rs.css">
+    <title>Reservation Table</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">Monday-Friday</h3>
+            <p>7am - 11am</p>
+
+            <h3 class="heading-days">Saturday And Sunday</h3>
+            <p>9am - 1am</p>
+
+            <hr>
+
+            <h4 class="heading-phone">Call Us: 6287007321</h4>
+        </div>
+
+        <div class="container-form">
+            <form action="#">
+                <h2 class="heading heading-yellow">Reservation Online</h2>
+
+                <div class="form-field">
+                    <p>Your Name</p>
+                    <input type="text" placeholder="Your Name">
+               </div>
+                <div class="form-field">
+                    <p>Your Email</p>
+                    <input type="text" placeholder="Your Email">
+               </div>
+                <div class="form-field">
+                    <p>Date</p>
+                    <input type="text">
+               </div>
+                <div class="form-field">
+                    <p>Time</p>
+                    <input type="text">
+               </div>
+                <div class="form-field">
+                    <p>How Many People?</p>
+                    <select name="select" id="#">
+                        <option value="1">1 Persons</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4 Persons</option>
+                        <option value="5">5 Persons</option>
+                        <option value="5+">5+ Persons</option>
+                    </select>
+               </div>
+
+               <button class="btn" onclick="openPopup()">Submit</button>
+               <div class="popup" id="popup">
+                <img src="img/404-tick.png">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+</body>
+</html>

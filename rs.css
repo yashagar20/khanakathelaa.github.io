@@ -1,0 +1,122 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container{
+    background-color: #fafafa;
+    margin: 200px;
+    box-shadow: rgba(2, 2, 3, .3);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-time{
+    background-color: black;
+    padding: 50px;
+    outline: 3px dashed #998100;
+    outline-offset: -30px;
+    text-align: center;
+}
+.heading{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.heading-days{
+    color: #998100;
+    font-size: 30px;
+}
+.heading-phone{
+    font-size: 20px;
+}
+.container-form{
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #000;
+}
+form{
+    display: grid;
+    grid-row-gap: 20px;
+}
+form p{
+    font-weight: 600;
+}
+.form-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+input,select{
+    pad: 10px 15px;
+}
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+}
+.btn:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
